@@ -98,7 +98,7 @@ jobs:
 #           tag: android-${{ env.td_version }}-${{ env.td_commit_hash }}
 #           name: Android ${{ env.td_version }}-${{ env.td_commit_hash }}
 #           body: https://github.com/tdlib/td/tree/${{ env.td_commit_hash }}
-#           token: ${{ secrets.GITHUB_TOKEN }}
+#           token: ${{ secrets.TOKEN_GITHUB }}
 #           artifacts: 'td/example/libs/libs.zip'
 
 #   build-macos-intel:
@@ -156,7 +156,7 @@ jobs:
 #           tag: macos-intel-${{ env.td_version }}-${{ env.td_commit_hash }}
 #           name: MacOS Intel ${{ env.td_version }}-${{ env.td_commit_hash }}
 #           body: https://github.com/tdlib/td/tree/${{ env.td_commit_hash }}
-#           token: ${{ secrets.GITHUB_TOKEN }}
+#           token: ${{ secrets.TOKEN_GITHUB }}
 #           artifacts: 'td/example/ios/tdjson/macOS/lib/libtdjson.zip'
 
 #   build-ios:
@@ -219,7 +219,7 @@ jobs:
 #           tag: ios-${{ env.td_version }}-${{ env.td_commit_hash }}
 #           name: iOS ${{ env.td_version }}-${{ env.td_commit_hash }}
 #           body: https://github.com/tdlib/td/tree/${{ env.td_commit_hash }}
-#           token: ${{ secrets.GITHUB_TOKEN }}
+#           token: ${{ secrets.TOKEN_GITHUB }}
 #           artifacts: 'td/example/ios/tdjson/iOS/lib/libtdjson.zip'
 
 #   build-linux-x64:
@@ -278,7 +278,7 @@ jobs:
 #           tag: linux-x64-${{ env.td_version }}-${{ env.td_commit_hash }}
 #           name: Linux x64 ${{ env.td_version }}-${{ env.td_commit_hash }}
 #           body: https://github.com/tdlib/td/tree/${{ env.td_commit_hash }}
-#           token: ${{ secrets.GITHUB_TOKEN }}
+#           token: ${{ secrets.TOKEN_GITHUB }}
 #           artifacts: 'td/tdlib/lib/libtdjson.zip'
 
   build-windows-x64:
@@ -330,6 +330,6 @@ jobs:
           tag: windows-x64-${{ env.td_version }}-${{ env.td_commit_hash }}
           name: Windows x64 ${{ env.td_version }}-${{ env.td_commit_hash }}
           body: https://github.com/tdlib/td/tree/${{ env.td_commit_hash }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.TOKEN_GITHUB }}
           artifacts: 'td/tdlib/bin/dlls.zip'
 
