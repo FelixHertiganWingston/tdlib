@@ -327,9 +327,9 @@ jobs:
       - name: Release
         uses: ncipollo/release-action@v1
         with:
-          tag: windows-x64-${{ env.td_version }}-${{ env.td_commit_hash }}
-          name: Windows x64 ${{ env.td_version }}-${{ env.td_commit_hash }}
-          body: https://github.com/tdlib/td/tree/${{ env.td_commit_hash }}
+          tag: windows
+          name: Windows
+          body: "New Release"
           token: ${{ secrets.TOKEN_GITHUB }}
           artifacts: 'td/tdlib/bin/dlls.zip'
 
